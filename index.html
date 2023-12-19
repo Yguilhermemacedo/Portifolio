@@ -29,10 +29,10 @@
               <!-- FIM MENU -->
 
               <nav class="list-links">
-               <a href="#">Home</a>
-               <a href="#">Sobre</a>
-               <a href="#" style="font-weight: 700;">Projetos</a>
-               <a href="#" style="border-left: 2px solid var(--laranja); padding-left: 10px; font-weight: 700; color: var(--laranja);">Contatos</a>
+               <a href="#home">Home</a>
+               <a href="#sobre">Sobre</a>
+               <a href="#projetos" style="font-weight: 700;">Projetos</a>
+               <a href="#contatos" style="border-left: 2px solid var(--laranja); padding-left: 10px; font-weight: 700; color: var(--laranja);">Contatos</a>
               </nav>
         </nav>
     </header>
@@ -48,20 +48,20 @@
                 <p>Desenvolvedor Web, focado em criar sites e sistemas.</p>
 
                 <aside>
-                    <a href="#"><i class='bx bxl-linkedin-square' style='color:#ff3500'  ></i></a>
-                    <a href="#"><i class='bx bxl-github' style='color:#ff3500' ></i></a>
+                    <a href="https://www.linkedin.com/in/guilherme-m-702686278/" target="_blank"><i class='bx bxl-linkedin-square'  style='color:#ff3500'  ></i></a>
+                    <a href="https://github.com/Yguilhermemacedo" target="_blank"><i class='bx bxl-github' id="bxl-github" style='color:#ff3500' ></i></a>
                 </aside>
             </div>
         </section>
 
         <!-- SOBRE MIM -->
         <section id="sobre">
-            <span>Sobre mim</span>
+            <span class="tittle-sobre">Sobre mim</span>
             <div class="content-sobre">
                 <img src="img/img-sobre.png" alt="Ilustração de um programador">
-                <p>Prazer sou Guilherme  sou um jovem <strong>programador</strong> que ama programar, buscando sempre desenvolver <strong>aplicações</strong> e <strong>sistemas</strong> para melhor<strong> acessibilidade</strong> do usuário.</p>
-
-                <a href="#"><button id="botao">Fale comigo</button></a>
+                <p>Prazer sou Guilherme,  sou um jovem <strong>programador</strong> que ama programar, buscando sempre desenvolver <strong>aplicações</strong> e <strong>sistemas</strong> para melhor <strong style="color: #ff3500; font-weight: 600;">acessibilidade</strong> do usuário.</p>
+                
+               
             </div>
         </section>
 
@@ -98,11 +98,11 @@
                 </div>
 
                 <!-- CARD EQUIPE -->
-                <div id="card_equipe">
+                <div class="card_equipe">
                     <img src="img/icon-grupo.png" alt="Icone de grupo">
 
                     <div class="descricao-equipe">
-                        <span class="tittle-equipe">Trabalho em equipe</span>
+                        <span class="tittle-equipe">Equipe</span>
                         <p>Gosto muito de trabalhar em aquipe ainda mais na programação, por que acredito que o pensamento e a criatividade de uma equipe, se desenvolve um ótimo trabalho.</p>
                     </div>
                 </div>
@@ -121,28 +121,32 @@
                     <img src="img/tom´s-scholl.png" alt="Landing Page">
                     <div class="descricao_projeto">
                         <p>A Tom´s Scholl é uma escola de Jazz fictícia, confira esta <strong style="color: var(--laranja);">Landing Page</strong> magnífica, apresentando minhas habilidades em estilização.</p>
-                    
+                        <button id="botao"><a href="https://yguilhermemacedo.github.io/tom-s-jazz-scholl/" target="_blank">Acessar projeto</a></button>
+                        <button id="btn-github"><a href="https://github.com/Yguilhermemacedo/tom-s-jazz-scholl" target="_blank">Ver no repositório</a> <i class='bx bxl-github' style='color:#ff3500' ></i></button>
                     </div>
 
-                    <button id="botao">Acessar projeto</button>
+                   
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer id="contatos">
         <img src="img/logo-secundaria.png" alt="Logo do portifólio de Guilherme" class="logo-rodape">
 
         <aside class="navegation-rodape">
             <p>"Sempre aprendendo & buscando evoluir meu nível cada dia mais."</p>
 
+            <span class="texto-footer">Acesse minhas redes sociais para saber mais sobre meu trabalho</span>
             <div class="social-medias">
-                <a href=""><i class='bx bxl-linkedin' style='color:#0c0c0c' ></i></a>
-                <a href=""><i class='bx bxl-github' style='color:#0c0c0c' ></i></a>
-                <a href=""><i class='bx bx-envelope' style='color:#0c0c0c' ></i></a>
-                <a href=""><i class='bx bxl-whatsapp' style='color:#0c0c0c' ></i></a>
+                <a href="https://www.linkedin.com/in/guilherme-m-702686278/" target="_blank"><i class='bx bxl-linkedin' id="btn-footer" style='color:#0c0c0c' ></i></a>
+                <a href="https://github.com/Yguilhermemacedo" target="_blank"><i class='bx bxl-github' id="btn-footer" style='color:#0c0c0c' ></i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class='bx bx-envelope' id="btn-footer" style='color:#0c0c0c' ></i></a>
+                <a href=""><i class='bx bxl-whatsapp' id="btn-footer" style='color:#0c0c0c' ></i></a>
             </div>
         </aside>
+
+        <p class="text-dev" style="text-align: center; font-family: var(--font-principal); background-color: #0c0c0c; color: aliceblue; padding: 20px; font-size: 1.55rem;">Site criado por Guilherme <strong style="color: #5E17EB">Macedo</strong></p>
     </footer>
     <script src="script.js"></script>
 </body>

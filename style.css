@@ -143,6 +143,7 @@ section#home{
 
 img.perfil{
     animation: flutuar 2s ease-in-out infinite;
+    margin-top: 5rem;
 }
 
 @keyframes flutuar {
@@ -206,7 +207,7 @@ div.text-apresentacao >aside{
     
 }
 
-.bxl-github{
+#bxl-github{
     font-size: 1.98rem;
     padding: 10px;
     border: 2px solid var(--laranja);
@@ -214,7 +215,7 @@ div.text-apresentacao >aside{
     color: #ff3500;
 }
 
-.bxl-github:hover{
+#bxl-github:hover{
     transform: scale(0.95);
     color: #000000;
     transition: .2s;
@@ -227,44 +228,354 @@ div.text-apresentacao >aside{
 
 /* SOBRE MIM */
 
+section#sobre{
+    height: 100vh;
+    padding: 20px;
+}
 
+span.tittle-sobre{
+    font-size: 3.63rem;
+    font-weight: bolder;
+    max-width: 20%;
+    margin: auto;
+    display: block;
+    font-family: var(--font-principal);
+    padding-bottom: 2px;
+    border-bottom: 4px solid var(--laranja);
+}
+
+div.content-sobre{
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    /* background-color: #00BF63; */
+}
+
+div.content-sobre> img{
+    height: 424.5px;
+    width: 474.8px;
+    display: block;
+    margin: auto;
+}
+
+div.content-sobre > p{
+    max-width: 900.5px;
+    display: block;
+    text-align: justify;
+    margin: auto ;
+    font-family: var(--font-principal);
+    font-size: 1.65rem;
+}
+
+button#botao{
+    position: absolute;
+    text-decoration: none;
+}
 /* FIM SOBRE MIM */
 
-  
+/* HABILIDADES */
+section#habilidades{
+    height: 120vh;
+    padding: 20px;
+}
+
+span.tittle-habilidades{
+    margin-bottom: 5rem;
+    font-size: 2.45rem;
+    font-family: var(--font-principal);
+    font-weight: 700;
+    border-bottom: 4px solid var(--laranja);
+}
+ 
+div#container_cards{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+div.card_coding{
+    height: 505.5px;
+    width: 322.5px;
+    padding: 20px;
+    margin-top: 5rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 19px 3px #70707081;
+    background-color: #e1e1e1;
+}
+
+div.card_coding:hover{
+    transform: translateY(-20px);
+    transition: .5s;
+}
+
+div.card_coding > img{
+    height: 130.3px;
+    width: 226.6px;
+    display: block;
+    margin: auto;
+}
+
+span.tittle_coding{
+    font-size: 1.25rem;
+    font-family: var(--font-mono);
+    font-weight: bold;
+    margin: 6rem;
+    margin-bottom: 5rem;
+}
+
+div.descricao-coding  p{
+    margin-top: 2rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    font-family: var(--font-principal);
+}
+
+div.tecnologias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10rem;
+}
+
+div.card_comunicacao{
+    height: 505.5px;
+    width: 362.5px;
+    padding: 20px;
+    margin-top: 5rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 19px 3px #70707081;
+    background-color: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-principal);
+}
+
+div.card_comunicacao:hover{
+    transform: translateY(-20px);
+    transition: .5s;
+}
+
+div.card_comunicacao img{
+    height: 96.1px;
+    width: 96.1px;
+    margin-bottom: 1rem;
+}
+
+span.tittle-comunicacao{
+    font-size: 1.45rem;
+    font-weight: bold;
+    margin: 6rem;
+}
+
+div.descricao-comunicacao p{
+    max-width: 500px;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: var(--font-principal);
+}
+
+div.card_equipe{
+    height: 505.5px;
+    width: 362.5px;
+    padding: 20px;
+    margin-top: 5rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 19px 3px #70707081;
+    background-color: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-principal);
+}
+
+div.card_equipe:hover{
+    transform: translateY(-20px);
+    transition: .5s;
+}
+
+div.card_equipe img{
+    height: 96.1px;
+    width: 96.1px;
+    margin-bottom: 1rem;
+}
+
+
+span.tittle-equipe{
+    max-width: 100%;
+    font-size: 1.55rem;
+    font-weight: bold;
+    margin: 8rem;
+}
+
+div.descricao-equipe p{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+/* FIM HABILIDADES */
+
+/* PROJETOS */
+section#projetos{
+    height: 100vh;
+    padding: 20px;
+    color: var(--branco);
+    background-color: var(--preto);
+}
+
+span.tittle_projetos{
+    font-size: 3.55rem;
+    font-family: var(--font-principal);
+    padding-bottom: 5px;
+    margin-bottom: 5rem;
+    border-bottom: 4px solid var(--laranja);
+}
+
+section#projetos p{
+    margin-top: 3rem;
+    font-family: var(--font-principal);
+    font-size: 1.45rem;
+}
+
+div.projeto-jazz{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;    
+    margin-top: 4rem;
+    margin-left: 6rem;
+    padding: 20px;
+    border-bottom: 2px solid #3f3f3f;
+}
+
+.descricao_projeto{
+    text-align: justify;
+    max-width: 700px;
+}
+
+#botao{
+    padding:5px;
+    margin-top: 1.25rem;
+    font-family: var(--font-principal);
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--laranja);
+    border-radius: 20px;
+}
+
+#botao a{
+    color: #e1e1e1;
+    text-decoration: none;
+}
+
+#botao:hover{
+    box-shadow: 3px 1px 23px 1px var(--laranja);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+#btn-github{
+    padding:5px;
+    margin-left: 10rem;
+    margin-top: 1.25rem;
+    padding: 5px;
+    padding-right: 3px;
+    font-family: var(--font-principal);
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--laranja);
+    border-radius: 20px;
+}
+
+#btn-github a{
+    color: #e1e1e1;
+    text-decoration: none;
+}
+
+#btn-github:hover{
+    box-shadow: 3px 1px 23px 1px var(--laranja);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+/* FIM PROJETOS */
+
 
   /* BOTAO ACESSAR */
-  button#botao {
-    position: relative;
-    background-color: var(--laranja);
-    border-radius: var(--branco) 0px 4px 0px 0px;
-    padding: 15px;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    width: 164px;
-    height: 39px;
-    color: #fff;
-    border: none;
-    font-size:1rem;
-    transition: all .3s ease-in-out;
-    z-index: 1;
-    overflow: hidden;
-  }
-
-
-  button#botao::before {
-    content: "";
-    background-color: #0D0C0E;
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 700ms ease-in-out;
-    display: inline-block;
-  }
   
-  button#botao:hover::before {
-    width: 100%;
-  }
   /* FIM BOTAO ACESSAR */
+
+  /* RODAP[É */
+  footer{
+    height: 90vh;
+    background-color: var(--branco);
+  }
+
+  footer img{
+    display: block;
+    margin: auto;
+    padding-top: 2rem ;
+}
+
+aside.navegation-rodape > p{
+    max-width: 500px;
+    display: block;
+    font-family: var(--font-principal);
+    font-weight: 800;
+    margin: 2rem auto;
+    font-size: 2rem;
+}
+
+span.texto-footer{
+    display: block;
+    width: 56%;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 20px;
+    box-shadow: 3px 3px 13px 5px #535353be; 
+    margin: auto auto 8rem;
+    color: #5E17EB;
+    font-family: var(--font-principal);
+    font-weight: bolder;
+    font-size: 1.65rem;
+    text-align: center;
+}
+
+div.social-medias{
+    width: 70%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    position: relative;
+    left: 9rem;
+    bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+#btn-footer{
+    font-size: 1.75rem;
+    border: 5px solid #5E17EB;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#btn-footer:hover{
+    box-shadow: 2px 2px 93px 5px #5E17EB;
+    transition: .8s;
+    transform: scale(1.1);
+}
