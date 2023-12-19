@@ -303,7 +303,7 @@ div.card_coding{
     margin-top: 5rem;
     border-radius: 10px;
     box-shadow: 3px 3px 19px 3px #70707081;
-    background-color: #e1e1e1;
+    background-color: #0D0C0E;
 }
 
 div.card_coding:hover{
@@ -322,6 +322,7 @@ span.tittle_coding{
     font-size: 1.25rem;
     font-family: var(--font-mono);
     font-weight: bold;
+    color: #5E17EB;
     margin: 6rem;
     margin-bottom: 5rem;
 }
@@ -330,6 +331,7 @@ div.descricao-coding  p{
     margin-top: 2rem;
     font-size: 1.15rem;
     font-weight: 700;
+    color: #e1e1e1;
     font-family: var(--font-principal);
 }
 
@@ -347,7 +349,7 @@ div.card_comunicacao{
     margin-top: 5rem;
     border-radius: 10px;
     box-shadow: 3px 3px 19px 3px #70707081;
-    background-color: #e1e1e1;
+    background-color: #0D0C0E;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -369,6 +371,7 @@ span.tittle-comunicacao{
     font-size: 1.45rem;
     font-weight: bold;
     margin: 6rem;
+    color: #5E17EB;
 }
 
 div.descricao-comunicacao p{
@@ -376,6 +379,7 @@ div.descricao-comunicacao p{
     margin-top: 2rem;
     font-size: 1.25rem;
     font-weight: 700;
+    color: #e1e1e1;
     font-family: var(--font-principal);
 }
 
@@ -386,7 +390,7 @@ div.card_equipe{
     margin-top: 5rem;
     border-radius: 10px;
     box-shadow: 3px 3px 19px 3px #70707081;
-    background-color: #e1e1e1;
+    background-color: #0D0C0E;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -409,6 +413,7 @@ span.tittle-equipe{
     max-width: 100%;
     font-size: 1.55rem;
     font-weight: bold;
+    color: #5E17EB;
     margin: 8rem;
 }
 
@@ -416,6 +421,7 @@ div.descricao-equipe p{
     margin-top: 1rem;
     font-size: 1.25rem;
     font-weight: bold;
+    color: #e1e1e1;
 }
 
 
