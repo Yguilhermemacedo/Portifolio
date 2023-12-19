@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Macedo</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span class="logo"><img src="img/logo.png" alt=""></span>
+
+        <nav class="navbar">
+            <!-- MENU -->
+            <label for="burger" class="burger">
+                <input id="burger" type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+              <!-- FIM MENU -->
+
+              <nav class="list-links">
+               <a href="#">Home</a>
+               <a href="#">Sobre</a>
+               <a href="#" style="font-weight: 700;">Projetos</a>
+               <a href="#" style="border-left: 2px solid var(--laranja); padding-left: 10px; font-weight: 700; color: var(--laranja);">Contatos</a>
+              </nav>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home">
+            <img src="img/perfil.png" alt="Imagem de Guilherme" class="perfil">
+            
+            <div class="text-apresentacao">
+                <span class="tittle-home">Olá sou Guilherme <strong style="color: var(--laranja);">Macedo</strong></span>
+                <p>Desenvolvedor Web, focado em criar sites e sistemas.</p>
+
+                <aside>
+                    <a href="#"><i class='bx bxl-linkedin-square' style='color:#ff3500'  ></i></a>
+                    <a href="#"><i class='bx bxl-github' style='color:#ff3500' ></i></a>
+                </aside>
+            </div>
+        </section>
+
+        <!-- SOBRE MIM -->
+        <section id="sobre">
+            <span>Sobre mim</span>
+            <div class="content-sobre">
+                <img src="img/img-sobre.png" alt="Ilustração de um programador">
+                <p>Prazer sou Guilherme  sou um jovem <strong>programador</strong> que ama programar, buscando sempre desenvolver <strong>aplicações</strong> e <strong>sistemas</strong> para melhor<strong> acessibilidade</strong> do usuário.</p>
+
+                <a href="#"><button id="botao">Fale comigo</button></a>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades">
+            <span class="tittle-habilidades">Habilidades</span>
+
+            <div id="container_cards">
+
+                <!-- CARD TECNOLOGIAS -->
+                <div class="card_coding">
+                    <img src="img/icon-coding.png" alt="Ilustração de um programador">
+                    <div class="descricao-coding">
+                        <span class="tittle_coding">Coding</span>
+                        <p>Aqui estão as tecnologias em que tenho um conhecimento sólido.</p>
+
+                        <div class="tecnologias">
+                            <img src="img/html-5.png" alt="Icone HTML">
+                            <img src="img/css-3.png" alt="Icone CSS">
+                            <img src="img/js.png" alt="Icone JavaScript">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD COMUNICAÇÃO -->
+                <div class="card_comunicacao">
+
+                    <img src="img/icon-comunic.png" alt="Icone de conversa">
+
+                    <div class="descricao-comunicacao">
+                        <span class="tittle-comunicacao">Comunicação</span>
+                        <p>Uma das coisas que gosto bastante é de socializar, conhecer novas amizades e trocar conhecimentos</p>
+                    </div>
+                </div>
+
+                <!-- CARD EQUIPE -->
+                <div id="card_equipe">
+                    <img src="img/icon-grupo.png" alt="Icone de grupo">
+
+                    <div class="descricao-equipe">
+                        <span class="tittle-equipe">Trabalho em equipe</span>
+                        <p>Gosto muito de trabalhar em aquipe ainda mais na programação, por que acredito que o pensamento e a criatividade de uma equipe, se desenvolve um ótimo trabalho.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- PROJETOS -->
+        <section id="projetos">
+            <span class="tittle_projetos">Meus trabalhos</span>
+            <p>Abaixo estão alguns trabalhos e projetos em que desenvolvi.<strong style="color: var(--verde);"> Veja mais no meu GitHub</strong></p>
+        
+            <div id="container-projetos">
+
+                <!-- TOM´S JAZZ SCHOOL -->
+                <div class="projeto-jazz">
+                    <img src="img/tom´s-scholl.png" alt="Landing Page">
+                    <div class="descricao_projeto">
+                        <p>A Tom´s Scholl é uma escola de Jazz fictícia, confira esta <strong style="color: var(--laranja);">Landing Page</strong> magnífica, apresentando minhas habilidades em estilização.</p>
+                    
+                    </div>
+
+                    <button id="botao">Acessar projeto</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="img/logo-secundaria.png" alt="Logo do portifólio de Guilherme" class="logo-rodape">
+
+        <aside class="navegation-rodape">
+            <p>"Sempre aprendendo & buscando evoluir meu nível cada dia mais."</p>
+
+            <div class="social-medias">
+                <a href=""><i class='bx bxl-linkedin' style='color:#0c0c0c' ></i></a>
+                <a href=""><i class='bx bxl-github' style='color:#0c0c0c' ></i></a>
+                <a href=""><i class='bx bx-envelope' style='color:#0c0c0c' ></i></a>
+                <a href=""><i class='bx bxl-whatsapp' style='color:#0c0c0c' ></i></a>
+            </div>
+        </aside>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

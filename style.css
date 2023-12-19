@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* CORES */
+    --laranja:#ff3500;
+    --preto:#0D0C0E;
+    --branco:#F1F2EB;
+    --verde:#00BF63;
+
+    /* FONTES */
+
+    --font-principal:'Afacad', sans-serif;
+    --font-mono:'Courier Prime', monospace;
+}
+
+body{
+    background-color: var(--branco);
+}
+
+/* CABEÇALHO */
+header{
+    height: 15vh;
+    background-color: var(--preto);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+span.logo > img{
+    height: 68.9px;
+    width: 94.1px;
+    margin-left: 2rem;
+}
+
+/* MENU */
+.burger {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-50%);
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    top: 0;
+    left: 5px;
+    transform: rotate(405deg);
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    top: 28px;
+    left: 5px;
+    transform: rotate(-405deg);
+  }
+
+  /* FIM MENU */
+
+nav.navbar{
+    height: 50px;
+    width: 400px;
+    padding: 10PX;
+}
+
+nav.list-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav.list-links >a{
+    font-size: 1.55rem;
+    font-family: var(--font-principal);
+    text-decoration: none;
+    color: #F1F2EB;
+}
+
+nav.list-links >a:hover{
+    border-bottom: 2px solid var(--laranja);
+    padding-bottom: 2px;
+    transform: rotate(0.75);
+    transition: .3s;
+}
+/* FIM CABEÇALHO */
+
+/* HOME */
+
+section#home{
+    height: 90vh;
+    width: 100;
+    padding: 20px;
+    color: var(--branco);
+    background-color: var(--preto);
+    display: flex;
+    flex-direction: row;
+    font-family: var(--font-principal);
+}
+
+img.perfil{
+    animation: flutuar 2s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+}
+
+div.text-apresentacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    width: 100%;
+}
+
+span.tittle-home{
+    font-size: 4rem;
+    animation:  2s steps(40) infinite;
+}
+
+@keyframes escrever {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+div.text-apresentacao >p{
+    font-size: 1.65rem;
+}
+
+div.text-apresentacao >aside{
+    display: flex;
+    height: auto;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 30%;
+}
+
+
+/* ICONES */
+.bxl-linkedin-square{
+    font-size: 1.98rem;
+    padding: 10px;
+    border: 2px solid var(--laranja);
+    border-radius: 50%;
+}
+
+.bxl-linkedin-square:hover{
+    transform: scale(0.95);
+    color: #000000;
+    transition: .2s;
+    border: 2px solid var(--laranja);
+    box-shadow: 3px 3px 63px 7px var(--laranja);
+    
+}
+
+.bxl-github{
+    font-size: 1.98rem;
+    padding: 10px;
+    border: 2px solid var(--laranja);
+    border-radius: 50%;
+    color: #ff3500;
+}
+
+.bxl-github:hover{
+    transform: scale(0.95);
+    color: #000000;
+    transition: .2s;
+    border: 2px solid var(--laranja);
+    box-shadow: 3px 3px 63px 7px var(--laranja);
+}
+/* FIM ICONES */
+
+/* FIM HOME */
+
+/* SOBRE MIM */
+
+
+/* FIM SOBRE MIM */
+
+  
+
+  /* BOTAO ACESSAR */
+  button#botao {
+    position: relative;
+    background-color: var(--laranja);
+    border-radius: var(--branco) 0px 4px 0px 0px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 164px;
+    height: 39px;
+    color: #fff;
+    border: none;
+    font-size:1rem;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+
+  button#botao::before {
+    content: "";
+    background-color: #0D0C0E;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  button#botao:hover::before {
+    width: 100%;
+  }
+  /* FIM BOTAO ACESSAR */
