@@ -128,11 +128,36 @@ nav.list-links >a:hover{
 }
 /* FIM CABEÇALHO */
 
+/* CABEÇALHO PARA TABLET */
+
+@media  (min-width:768px) and (max-width:1024px) {
+    header{
+        height: 10vh;
+        padding-top: 2rem;
+        justify-content: space-between;
+    }
+
+    nav.list-links{
+        display: flex;
+        gap: 40px;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 17rem;
+    }
+
+    nav.list-links a{
+        font-family: var(--font-principal);
+        font-size: 2.15rem;
+    }
+
+
+}
+
 /* HOME */
 
 section#home{
     height: 90vh;
-    width: 100;
+    width: 100%;
     padding: 20px;
     color: var(--branco);
     background-color: var(--preto);
@@ -226,6 +251,109 @@ div.text-apresentacao >aside{
 
 /* FIM HOME */
 
+@media  (min-width:768px) and (max-width:1024px){
+    section#home{
+    height: 110vh;
+    width: 100%;
+    padding: 20px;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-principal);
+    }
+
+    img.perfil{
+        height: 626px;
+        width: 626px;
+        display: block;
+        margin: auto;
+        animation: flutuar 2s ease-in-out infinite;
+        margin-top: 5rem;
+    }
+
+    .text-apresentacao{
+        height: 600px;
+        position: relative;
+        bottom: 11rem;
+    }
+
+    span.tittle-home{
+        font-size: 5rem;
+        animation:  2s steps(40) infinite;
+    }
+
+    div.text-apresentacao >p{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    div.text-apresentacao >aside{
+        display: flex;
+        height: auto;
+        padding: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: relative;
+        top: 3rem;
+        left: 16rem;
+        max-width: 40%;
+    }
+    
+    .bxl-linkedin-square{
+        font-size: 3.55rem;
+        padding: 25px;
+        border: 2px solid var(--laranja);
+        border-radius: 50%;
+    }
+
+    #bxl-github{
+        font-size: 3.55rem;
+        padding: 20px;
+        border: 2px solid var(--laranja);
+        border-radius: 50%;
+        color: #ff3500;
+    }
+
+    section#sobre{
+        height: 100vh;
+        padding: 40px;
+    }    
+
+    h1.tittle-sobre{
+        font-weight: bolder;
+        max-width: 100%;
+        margin: auto;
+        display: block;
+        font-family: var(--font-principal);
+        padding-bottom: 2px;
+        border-bottom: 5px solid var(--laranja);
+    }
+
+    div.content-sobre{
+        display: flex;
+        height: 70%;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    div.content-sobre> img{
+        height: 424.5px;
+        width: 474.8px;
+        display: block;
+        margin: auto;
+    }
+
+    div.content-sobre > p{
+        max-width: 300.5px;
+        display: block;
+        text-align: justify;
+        margin: auto ;
+        font-family: var(--font-mono);
+        font-size: 1.25rem;
+    }
+}
+
 /* SOBRE MIM */
 
 section#sobre{
@@ -233,15 +361,15 @@ section#sobre{
     padding: 20px;
 }
 
-span.tittle-sobre{
-    font-size: 3.63rem;
+h1.tittle-sobre{
+    font-size: 5.63rem;
     font-weight: bolder;
-    max-width: 20%;
+    max-width: 60%;
     margin: auto;
     display: block;
     font-family: var(--font-principal);
     padding-bottom: 2px;
-    border-bottom: 4px solid var(--laranja);
+    border-bottom: 5px solid var(--laranja);
 }
 
 div.content-sobre{
@@ -259,12 +387,12 @@ div.content-sobre> img{
 }
 
 div.content-sobre > p{
-    max-width: 900.5px;
+    max-width: 700.5px;
     display: block;
-    text-align: justify;
     margin: auto ;
+    text-align: justify;
     font-family: var(--font-principal);
-    font-size: 1.65rem;
+    font-size: 2.5rem;
 }
 
 button#botao{
@@ -273,15 +401,45 @@ button#botao{
 }
 /* FIM SOBRE MIM */
 
+@media  (min-width:768px) and (max-width:1024px){
+    section#habilidades{
+        height: 90vh;
+        padding: 20px;
+    }
+    
+    span.tittle-habilidades{
+        margin-bottom: 5rem;
+        font-size: 3.45rem;
+        font-family: var(--font-principal);
+        font-weight: 700;
+        border-bottom: 4px solid var(--laranja);
+    }
+
+    div#container_cards{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    span.tittle-habilidades{
+        margin-bottom: 5rem;
+        font-size: 3.45rem;
+        font-family: var(--font-principal);
+        font-weight: 700;
+        border-bottom: 4px solid var(--laranja);
+    }
+}
 /* HABILIDADES */
 section#habilidades{
-    height: 120vh;
+    height: 100vh;
     padding: 20px;
 }
 
 span.tittle-habilidades{
     margin-bottom: 5rem;
-    font-size: 2.45rem;
+    font-size: 3.45rem;
     font-family: var(--font-principal);
     font-weight: 700;
     border-bottom: 4px solid var(--laranja);
@@ -292,7 +450,7 @@ div#container_cards{
     flex-direction: row;
     gap: 30px;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 
@@ -329,7 +487,7 @@ span.tittle_coding{
 
 div.descricao-coding  p{
     margin-top: 2rem;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #e1e1e1;
     font-family: var(--font-principal);
@@ -427,12 +585,32 @@ div.descricao-equipe p{
 
 /* FIM HABILIDADES */
 
+
+@media (min-width:768px) and (max-width:1024px) {
+    section#projetos{
+        height: 80vh;
+        padding: 30px;
+        color: var(--branco);
+        background-color: var(--verde);
+    }
+
+    #container-projetos{
+        display: flex;
+        flex-direction: column;
+    }
+}
 /* PROJETOS */
 section#projetos{
-    height: 100vh;
+    height: 80vh;
     padding: 20px;
     color: var(--branco);
     background-color: var(--preto);
+    
+}
+
+#container-projetos{
+    display: flex;
+    flex-direction: column;
 }
 
 span.tittle_projetos{
@@ -444,9 +622,9 @@ span.tittle_projetos{
 }
 
 section#projetos p{
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-family: var(--font-principal);
-    font-size: 1.45rem;
+    font-size: 1.75rem;
 }
 
 div.projeto-jazz{
