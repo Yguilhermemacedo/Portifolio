@@ -586,19 +586,6 @@ div.descricao-equipe p{
 /* FIM HABILIDADES */
 
 
-@media (min-width:768px) and (max-width:1024px) {
-    section#projetos{
-        height: 80vh;
-        padding: 30px;
-        color: var(--branco);
-        background-color: var(--verde);
-    }
-
-    #container-projetos{
-        display: flex;
-        flex-direction: column;
-    }
-}
 /* PROJETOS */
 section#projetos{
     height: 80vh;
