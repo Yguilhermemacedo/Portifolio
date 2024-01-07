@@ -28,3 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
         adicionarLetras(0);
     }, atrasoInicial);
 });
+    
+
+
