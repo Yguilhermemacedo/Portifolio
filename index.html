@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
     <link rel="shortcut icon" href="img/logo-removebg-preview (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="config.css">
     <link rel="stylesheet" href="celular.css">
     <link rel="stylesheet" href="tablet.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -14,15 +15,20 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img src="img/logo-port.png" alt="Guilherme Macedo" class="logo">
+        <a href="#"><img src="img/logo-removebg-preview (1).png" alt="Guilherme Macedo" class="logo"></a>
+        <!-- MENU HAMBÚGUER -->
+        <button class="toggle-btn" onclick="abrirMenu()"><i class='bx bx-menu'></i></button>
         <nav class="menu">
+            <button class="fechar-menu" onclick="fecharMenu()"><i class='bx bx-x'></i></button>
             <ul>
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Habilidades</a></li>
                 <li><a href="#">Projetos</a></li>
+                <button class="btn-contato">Contato</button>
             </ul>
+           
         </nav>
-        <button class="btn-contato">Contato</button>
+        
     </header>
     <main>
         <section id="home">
@@ -31,27 +37,30 @@
                 <h1 class="tittle-home">Olá sou Guilherme Macedo</h1>
                 <h2>DESENVOLVEDOR FRONT END</h2>
                 <div class="apresentacao-texto">
-                    <p>Olá, sou um desenvolvedor apaixonado por transformar códigos em experiências visuais incríveis. Como desenvolvedor Front End, trago não apenas habilidades, mas também um comprometimento e a proatividade no ambiente de trabalho.</p>
+                    <p>Olá, sou um <strong style="color: #1649ff;">desenvolvedor</strong> apaixonado por transformar códigos em experiências visuais incríveis. Como desenvolvedor <strong style="color: #1649ff;">Front End</strong>, trago não apenas habilidades, mas também um comprometimento e a proatividade no ambiente de trabalho.</p>
 
                 </div>
-                <a href="">
-                    <button class="btn-github">GitHub <i class='bx bxl-github'></i></button>
-                </a><a href="">
-                    <button class="btn-linkedin">Linkedin <i class='bx bxl-linkedin' style='color:#1649ff'  ></i></button>
-                </a>
+                <div id="botoes">
+                    <a href="https://github.com/Yguilhermemacedo" target="_blank">
+                        <button class="btn-github">GitHub <i class='bx bxl-github'></i></button>
+                    </a><a href="https://www.linkedin.com/in/guilherme-m-702686278/" target="_blank">
+                        <button class="btn-linkedin">Linkedin <i class='bx bxl-linkedin' style='color:#1649ff'  ></i></button>
+                    </a>
+                </div>
             </div>
         </section>
         <!-- SESSÃO HABILIDADES -->
         <section id="habilidades">
             <div class="skills">
+                <h1>Habilidades</h1>
                 <img src="img/git.png" alt="">
-                <img src="" alt="">
                 <img src="img/html-5.png" alt="">
                 <img src="img/css-3.png" alt="">
                 <img src="img/js.png" alt="">
             </div>
 
             <div class="aprendizagem">
+                <h2>Em aprendizagem</h2>
                 <img src="img/react.png" alt="">
                 <img src="img/node.png" alt="">
                 <img src="img/sql.png" alt="">
@@ -100,5 +109,6 @@
             <span class="btn-instagram-footer"><box-icon name='instagram' type='logo' color='#1649ff' ></box-icon></span>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

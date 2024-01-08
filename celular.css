@@ -1,0 +1,260 @@
+/* VARIÁVEIA */
+:root{
+    /* CORES */
+    --azul:#1649FF;
+    --preto:#121212;
+    --laranja:#FC440F;
+    --branco:#F1F2EB;
+    
+        /* FONTE */
+    --fonte-principal:'Poppins', sans-serif;;
+}
+
+@media (max-width:767px) {
+
+    body{
+        background-color: var(--branco);
+    }
+
+    .cabecalho{
+        background-color: transparent;
+        height: 9vh;
+        width: 95%;
+        padding: 20px;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo{
+        height: 63.4px;
+        width: 64.3px;
+        padding-bottom: 6px;
+    }
+
+    .toggle-btn{
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .bx-menu{
+        font-size: 3rem;
+        color: #545454;
+    }
+
+    .bx-x{
+        font-size: 3.25rem;
+        color: red;
+    }
+      .menu{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--branco);
+        padding: 20px;
+        box-sizing: border-box;
+        transition: left 0.3s ease;
+        z-index: 1000;
+      }
+
+      .menu ul {
+        list-style: none;
+        padding: 0;
+        background-color: var(--branco);
+        margin: 0;
+      }
+
+      .menu li {
+        margin-bottom: 2rem;
+      }
+      
+      .menu a {
+        text-decoration: none;
+        color: #545454;
+        font-size: 18px;
+        font-family: var(--fonte-principal);
+      }
+
+      .btn-contato{
+        font-size: 1.15rem;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 20px;
+        color: var(--branco);
+        font-weight: 500;
+        background-color: #2965F1;
+        font-family: var(--fonte-principal);
+      }
+
+      @keyframes slideIn {
+        to {
+          left: 0;
+        }
+      
+        from {
+          left: -100%;
+        }
+      }
+      
+      .menu.open {
+        animation: slideIn 0.5s forwards;
+      }
+
+      .fechar-menu {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: var(--branco);
+        color: #333;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    #home{
+        height: 150vh;
+        padding-top: 15rem;
+        padding: 20px;
+        font-family: var(--fonte-principal);
+    }
+
+    .foto-perfil{
+        height: 245.8px;
+        width: 245.8px;
+        display: block;
+        margin: 4rem auto;
+        border: 4px solid var(--azul);
+        border-radius: 50%;
+        box-shadow: 0px 0px 13px #1547fcc5;
+        background: url(img/perfil.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .tittle-home{
+        text-align: center;
+        font-size: 1.95rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .apresentacao > h2{
+        font-size: 1.25rem;
+        color: #1649FF;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 7px;
+    }
+
+    .apresentacao-texto{
+        margin-top: 2rem;
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    #botoes{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .btn-github{
+        cursor: pointer;
+        margin-top: 3rem;
+        padding: 15px;
+        padding-left: 1.15rem;
+        background-color: #000000;
+        color: var(--branco);
+        font-family: var(--fonte-principal);
+        font-size: 1.25rem;
+        border: none;
+        border-radius: 30px;
+    }
+
+    .bxl-github{
+        color: var(--branco);
+        font-size: 1.65rem;
+        padding-left: 1.15rem;
+    }
+
+    .btn-linkedin{
+        margin-top: 3rem;
+        cursor: pointer;
+        padding: 15px;
+        padding-left: 1.15rem;
+        border: none;
+        border-radius: 30px;
+        background-color: #A5C0FF;
+        color: var(--preto);
+        font-weight: 600;
+        font-family: var(--fonte-principal);
+        font-size: 1.25rem;
+
+    }
+
+    #habilidades{
+        height: 110vh;
+        background-color: var(--preto);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skills{
+        margin-left: 8rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 40%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .skills h1{
+        font-size: 1.65rem;
+        border-bottom: 4px solid #1649FF;       
+        margin-bottom:1rem;
+        color: var(--branco);
+        font-family: var(--fonte-principal);
+    }
+
+    .skills > img{
+        height: 69px;
+        width: 69px;
+    }
+
+    .aprendizagem{
+        margin-left: 8rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .aprendizagem h2{
+        font-size: 1.65rem;
+        border-bottom: 4px solid #1649FF;       
+        margin-bottom:1rem;
+        color: var(--branco);
+        font-family: var(--fonte-principal);
+    }
+
+    #projetos{
+        height: 200vh;
+        background: url(img/Background.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        padding: 20px;
+    }
+
+}
+
