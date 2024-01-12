@@ -13,11 +13,12 @@
 @media (max-width:767px) {
 
     body{
-        max-width: 100vw;
+        max-width: 100%;
         background-color: var(--branco);
+        overflow-x: hidden;
     }
 
-    .cabecalho{
+   .cabecalho{
         background-color: transparent;
         height: 9vh;
         width: 95%;
@@ -26,13 +27,15 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
+    } 
+    
 
     .logo{
         height: 63.4px;
         width: 64.3px;
         padding-bottom: 6px;
-    }
+    } 
+   
 
     .toggle-btn{
         border: none;
@@ -49,7 +52,8 @@
         font-size: 3.25rem;
         color: red;
     }
-      .menu{
+      
+    .menu{
         position: fixed;
         top: 0;
         left: -100%;
@@ -60,7 +64,9 @@
         box-sizing: border-box;
         transition: left 0.3s ease;
         z-index: 1000;
-      }
+      } 
+
+      
 
       .menu ul {
         list-style: none;
@@ -118,7 +124,7 @@
     }
 
     #home{
-        height: 105vh;
+        height: 140vh;
         max-width: 100%;
         padding-top: 15rem;
         padding: 25px;
@@ -202,7 +208,7 @@
     }
 
     #habilidades{
-        height: 110vh;
+        height: 80vh;
         background-color: var(--preto);
         display: flex;
         flex-direction: column;
@@ -250,6 +256,11 @@
         font-family: var(--fonte-principal);
     }
 
+    .aprendizagem img{
+        height: 59px;
+        width: 69px;
+    }
+
     #projetos{
         height: 200vh;
         background: url(img/Background.jpg);
@@ -258,5 +269,81 @@
         padding: 20px;
     }
 
+    #projetos h1{
+        font-size: 2.5rem;
+        margin: 3rem;
+        color: var(--preto);
+        text-align: center;
+        font-family: var(--fonte-principal);
+    }
+
+    .projeto-1{
+        height: 550px;
+        padding: 20px;
+        width: 100%;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projeto-1 img{
+        height: 200px;        
+        width: auto;
+    }
+
+    .descricao-proj1{
+        width: 100%;
+    }
+
+    .tittle-proj1{
+        text-align: center;
+        font-size: 1.25rem;
+        font-family: var(--fonte-principal);
+        font-weight: 600;
+    }
+
+    .descricao-proj1 p{
+        font-size: 1rem;
+        font-weight: 600;
+        color: #2f2f2f;
+        margin: 2rem;
+        font-family: var(--fonte-principal);
+    }
+
+    .tec-image{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    li{
+        list-style: none;
+    }
+
+   .tec-image img{
+        height: 49px;
+        width: 49px;
+        margin-left: 2rem;
+    }
+
+    .descricao-proj1 button{
+        width: 200px;
+        padding: 10px;
+        border: none;
+        background-color: var(--azul);
+        
+    }
+
+    .descricao-proj1 button a{
+        font-size: 1rem;
+        color: var(--branco);
+        text-decoration: none;
+        font-weight: 600;
+        font-family: var(--fonte-principal);
+    }
+
+    /* Prtojeto 2 */
+
+    
 }
 
