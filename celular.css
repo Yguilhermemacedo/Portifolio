@@ -16,6 +16,7 @@
         max-width: 100%;
         background-color: var(--branco);
         overflow-x: hidden;
+        font-family: var(--fonte-principal);
     }
 
    .cabecalho{
@@ -208,7 +209,7 @@
     }
 
     #habilidades{
-        height: 80vh;
+        height: 50vh;
         background-color: var(--preto);
         display: flex;
         flex-direction: column;
@@ -238,31 +239,8 @@
         width: 69px;
     }
 
-    .aprendizagem{
-        margin-left: 8rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 100%;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .aprendizagem h2{
-        font-size: 1.65rem;
-        border-bottom: 4px solid #1649FF;       
-        margin-bottom:1rem;
-        color: var(--branco);
-        font-family: var(--fonte-principal);
-    }
-
-    .aprendizagem img{
-        height: 59px;
-        width: 69px;
-    }
-
     #projetos{
-        height: 200vh;
+        height: 229vh;
         background: url(img/Background.jpg);
         background-position: top center;
         background-repeat: no-repeat;
@@ -326,6 +304,59 @@
         margin-left: 2rem;
     }
 
+    .descricao-proj2 button{
+        width: 200px;
+        padding: 10px;
+        border: none;
+        background-color: var(--azul);
+        
+    }
+
+    .descricao-proj2 button a{
+        font-size: 1rem;
+        color: var(--branco);
+        text-decoration: none;
+        font-weight: 600;
+        font-family: var(--fonte-principal);
+    }
+
+    /* Prtojeto 2 */
+
+    .projeto-2{
+        height: 550px;
+        padding: 20px;
+        width: 100%;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto-2 img{
+        height: 400px;
+        width: 200px;   
+    }
+
+    .descricao-proj2 h2{
+        font-size: 1.25rem;
+        margin: 1rem;
+        font-family: var(--fonte-principal);
+    }
+
+    .descricao-proj2 p{
+        font-size: 1rem;
+        font-family: var(--fonte-principal);
+        color: #333;
+        margin: 1rem;
+    }
+
+    .tec-image img{
+        height: 49px;
+        width: 49px;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+
     .descricao-proj1 button{
         width: 200px;
         padding: 10px;
@@ -342,8 +373,21 @@
         font-family: var(--fonte-principal);
     }
 
-    /* Prtojeto 2 */
+    /* RODAPÉ */
+    #contatos{
+        height: 50vh;
+        width: 100%;
+    }
 
-    
+    aside p{
+        padding: 20px;
+    }
+
+    .social-media-footer{
+        padding: 20px;
+        height: 30vh;
+        width: 100%;
+        color: var(--branco);
+        background-color: var(--preto);
+    }
 }
-

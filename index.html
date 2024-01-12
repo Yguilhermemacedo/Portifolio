@@ -21,9 +21,9 @@
         <nav class="menu">
             <button class="fechar-menu" onclick="fecharMenu()"><i class='bx bx-x'></i></button>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Projetos</a></li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
                 <button class="btn-contato">Contato</button>
             </ul>
            
@@ -58,13 +58,6 @@
                 <img src="img/css-3.png" alt="">
                 <img src="img/js.png" alt="">
             </div>
-
-            <div class="aprendizagem">
-                <h2>Em aprendizagem</h2>
-                <img src="img/react.png" alt="">
-                <img src="img/node.png" alt="">
-                <img src="img/sql.png" alt="">
-            </div>
         </section>
         <!-- SESSÃO PROJETOS -->
         <section id="projetos">
@@ -88,6 +81,7 @@
                                     <img src="img/css-3.png" alt="">
                                 </abbr>
                             </li>
+                            
                         </ul>
                     </p>
 
@@ -99,18 +93,33 @@
             <div class="projeto-2">
                 <img src="img/celular.png" alt="">
                 <div class="descricao-proj2">
-                    <span class="tittle-proj2">Relógio digital </span>
-                    <p>
-
-                    </p>
-                    <button><a href="https://yguilhermemacedo.github.io/tom-s-jazz-scholl/" target="_blank">Ver projeto</a></button>
-                    <button><a href="https://github.com/Yguilhermemacedo/tom-s-jazz-scholl" target="_blank">Repositório</a></button>
+                    <h2 class="tittle-proj2">Relógio digital </h2>
+                    <p>Tecnologais usadas:</p>
+                            <ul class="tec-image">
+                            <li>
+                                <abbr title="HTML 5">
+                                    <img src="img/html-5.png" alt="">
+                                </abbr>
+                            </li>
+                            <li>
+                                <abbr title="CSS 3">
+                                    <img src="img/css-3.png" alt="">
+                                </abbr>
+                            </li>
+                            <li>
+                                <abbr title="JavaScript">
+                                    <img src="img/js.png" alt="">
+                                </abbr>
+                            </li>
+                        </ul>
+                        <a href="https://yguilhermemacedo.github.io/Relogio-digital/" target="_blank"><button>Ver projeto</button></a>
+                    <button><a href="https://github.com/Yguilhermemacedo/Relogio-digital?tab=readme-ov-file" target="_blank">Repositório</a></button>
                 </div>
             </div>
         </section>
     </main>
     <!-- RODAPé -->
-    <footer class="rodape">
+    <footer id="contatos">
         <aside>
             <p><strong>Contate-me</strong> e Transforme Seus Projetos em <strong>Realidade</strong>!</p>
             <button class="btn-form">
@@ -121,7 +130,9 @@
             <span class="btn-github-footer"></span>
             <span class="btn-linkedin-footer"></span>
             <span class="btn-instagram-footer"><box-icon name='instagram' type='logo' color='#1649ff' ></box-icon></span>
+            <p>Site criado por Guilherme <strong style="color: #1649ff; text-align: center;">Macedo</strong></p> 
         </div>
+      
     </footer>
     <script src="script.js"></script>
 </body>
