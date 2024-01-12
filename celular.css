@@ -117,7 +117,7 @@
     }
 
     #home{
-        height: 150vh;
+        height: 100vh;
         padding-top: 15rem;
         padding: 20px;
         font-family: var(--fonte-principal);
