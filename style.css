@@ -54,7 +54,7 @@ span.logo > img{
   }
   
   .burger span {
-    display: block;
+    display: noe;
     position: absolute;
     height: 4px;
     width: 100%;
